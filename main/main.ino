@@ -152,6 +152,10 @@ void sleep() {
 
 
 void callback(uint8_t message) {
+
+  // Serial.print("\nmessage: ");
+  // Serial.println(message);
+
     bool ttn_joined = false;
     if (EV_JOINED == message) {
         ttn_joined = true;
